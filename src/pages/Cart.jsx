@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart } from "../store/cartSlice";
+import { removeFromCart } from "../store/CartSlice";
 import Header from "@/component/Header";
 import Footer from "@/component/Footer";
 

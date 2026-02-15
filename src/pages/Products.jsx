@@ -3,10 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../store/ProdectCardSlice";
 import { toast } from "react-toastify";
 import { ClipLoader } from "react-spinners";
-import { addToCart } from "../store/cartSlice";
+import { addToCart } from "../store/CartSlice";
 import { useNavigate } from "react-router-dom"; 
-import Header from "@/component/Header";
-import Footer from "@/component/Footer";
 
 const Products = () => {
   const dispatch = useDispatch();
