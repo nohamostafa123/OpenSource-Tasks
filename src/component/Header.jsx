@@ -18,6 +18,9 @@ export default function Header() {
           <Link to="/cart" className="hover:text-gray-300">
             Cart
           </Link>
+          <Link to="/blog" className="hover:text-gray-300">
+            Services
+          </Link>
         </nav>
       </div>
     </header>

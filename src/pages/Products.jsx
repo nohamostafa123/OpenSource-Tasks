@@ -4,13 +4,13 @@ import { fetchProducts } from "../store/ProdectCardSlice";
 import { toast } from "react-toastify";
 import { ClipLoader } from "react-spinners";
 import { addToCart } from "../store/cartSlice";
-import { useNavigate } from "react-router-dom"; // 👈 مهم
+import { useNavigate } from "react-router-dom"; 
 import Header from "@/component/Header";
 import Footer from "@/component/Footer";
 
 const Products = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate(); // 👈 نستخدمه للتنقل
+  const navigate = useNavigate(); 
 
   const { items, loading, toastMessage, toastType } =
     useSelector((state) => state.products);
@@ -37,7 +37,6 @@ const Products = () => {
     }
   }, [toastMessage, toastType]);
 
-  // 👇 دي أهم إضافة
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
     navigate("/cart"); 
@@ -45,7 +44,6 @@ const Products = () => {
 
   return (
     <>
-    <Header />
     <div className="min-h-screen bg-gray-100 p-8">
       <h1 className="text-3xl font-bold mb-6 text-center">
         Products
@@ -89,7 +87,6 @@ const Products = () => {
         </div>
       )}
     </div>
-    <Footer />
     </>
   );
 };

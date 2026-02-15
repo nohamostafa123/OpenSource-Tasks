@@ -14,7 +14,6 @@ const Cart = () => {
 
   return (
     <>
-    <Header />
     <div className="min-h-screen p-8 bg-gray-100">
       <h1 className="text-3xl font-bold mb-6 text-center">
         My Cart
@@ -59,7 +58,6 @@ const Cart = () => {
         </>
       )}
     </div>
-    <Footer />
     </>
   );
 };
